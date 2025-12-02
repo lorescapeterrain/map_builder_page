@@ -25,7 +25,10 @@ function loadEnvFile() {
       const [key, ...valueParts] = trimmed.split('=');
       if (key && valueParts.length > 0) {
         const value = valueParts.join('=').trim();
-        process.env[key.trim()] = value;
+        const cleanKey = key.trim();
+        if (!process.env[cleanKey]) {
+          process.env[cleanKey] = value;
+        }
       }
     });
     
