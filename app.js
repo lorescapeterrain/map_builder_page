@@ -403,62 +403,62 @@ const bootstrapApp = () => {
   function getGridTexturePath(biomeId) {
     const textureConfigs = {
       // Grassland sets
-      gs_grass: { gridTexture: 'textures/grid-Grassland---plain-grass.png', gridSize: { cols: 5, rows: 10 } },
-      gs_tracks_streams: { gridTexture: 'textures/grid-Grassland---Tracks-and-Streams.png', gridSize: { cols: 5, rows: 10 } },
-      gs_forest_flora: { gridTexture: 'textures/grid-Grassland-Forest-and-Flora.png', gridSize: { cols: 5, rows: 10 } },
+      gs_grass: { gridTexture: 'assets/textures/grid-Grassland---plain-grass.png', gridSize: { cols: 5, rows: 10 } },
+      gs_tracks_streams: { gridTexture: 'assets/textures/grid-Grassland---Tracks-and-Streams.png', gridSize: { cols: 5, rows: 10 } },
+      gs_forest_flora: { gridTexture: 'assets/textures/grid-Grassland-Forest-and-Flora.png', gridSize: { cols: 5, rows: 10 } },
       // Barrenland sets
-      bl_earth: { gridTexture: 'textures/grid-Barrenland-set---dirt.png', gridSize: { cols: 5, rows: 10 } },
-      bl_tracks_streams: { gridTexture: 'textures/grid-Barrenland-tracks-and-streams.png', gridSize: { cols: 5, rows: 10 } },
-      bl_wasteland_forest: { gridTexture: 'textures/grid-Barrenland-Forest-and-Rocks.png', gridSize: { cols: 5, rows: 10 } },
+      bl_earth: { gridTexture: 'assets/textures/grid-Barrenland-set---dirt.png', gridSize: { cols: 5, rows: 10 } },
+      bl_tracks_streams: { gridTexture: 'assets/textures/grid-Barrenland-tracks-and-streams.png', gridSize: { cols: 5, rows: 10 } },
+      bl_wasteland_forest: { gridTexture: 'assets/textures/grid-Barrenland-Forest-and-Rocks.png', gridSize: { cols: 5, rows: 10 } },
       // Mountain sets
-      mt_stone: { gridTexture: 'textures/grid-Mountains---Stone.png', gridSize: { cols: 5, rows: 10 } },
-      mt_streams_forest: { gridTexture: 'textures/grid-Mountains---Streams-and-Forests.png', gridSize: { cols: 5, rows: 10 } },
+      mt_stone: { gridTexture: 'assets/textures/grid-Mountains---Stone.png', gridSize: { cols: 5, rows: 10 } },
+      mt_streams_forest: { gridTexture: 'assets/textures/grid-Mountains---Streams-and-Forests.png', gridSize: { cols: 5, rows: 10 } },
       // Oceanic sets
-      oc_water: { gridTexture: 'textures/grid-Oceanic---Water.png', gridSize: { cols: 5, rows: 10 } },
-      oc_coastal: { gridTexture: 'textures/grid-Oceanic---Coastal.png', gridSize: { cols: 5, rows: 10 } },
-      oc_tropical_island: { gridTexture: 'textures/grid-Oceanic---Tropical-Island-and-Shallows.png', gridSize: { cols: 5, rows: 10 } },
+      oc_water: { gridTexture: 'assets/textures/grid-Oceanic---Water.png', gridSize: { cols: 5, rows: 10 } },
+      oc_coastal: { gridTexture: 'assets/textures/grid-Oceanic---Coastal.png', gridSize: { cols: 5, rows: 10 } },
+      oc_tropical_island: { gridTexture: 'assets/textures/grid-Oceanic---Tropical-Island-and-Shallows.png', gridSize: { cols: 5, rows: 10 } },
       // Desert sets
-      ds_sand: { gridTexture: 'textures/grid-Desert-set---Sand.png', gridSize: { cols: 5, rows: 10 } },
-      ds_tracks_ridgelines: { gridTexture: 'textures/grid-Desert-Tracks-and-Ridgelines.png', gridSize: { cols: 5, rows: 10 } },
-      ds_ruins_oases: { gridTexture: 'textures/grid-Desert-set---Oases-and-Ruins.png', gridSize: { cols: 5, rows: 10 } },
+      ds_sand: { gridTexture: 'assets/textures/grid-Desert-set---Sand.png', gridSize: { cols: 5, rows: 10 } },
+      ds_tracks_ridgelines: { gridTexture: 'assets/textures/grid-Desert-Tracks-and-Ridgelines.png', gridSize: { cols: 5, rows: 10 } },
+      ds_ruins_oases: { gridTexture: 'assets/textures/grid-Desert-set---Oases-and-Ruins.png', gridSize: { cols: 5, rows: 10 } },
       // Arctic sets
-      ar_snow: { gridTexture: 'textures/grid-Arctic---Snow.png', gridSize: { cols: 5, rows: 10 } },
-      ar_frozen_forest: { gridTexture: 'textures/grid-Arctic---Frozen-Streams-and-Forests.png', gridSize: { cols: 5, rows: 10 } },
-      ar_ice_rocks: { gridTexture: 'textures/grid-Arctic---Rocks-and-Ice.png', gridSize: { cols: 5, rows: 10 } },
+      ar_snow: { gridTexture: 'assets/textures/grid-Arctic---Snow.png', gridSize: { cols: 5, rows: 10 } },
+      ar_frozen_forest: { gridTexture: 'assets/textures/grid-Arctic---Frozen-Streams-and-Forests.png', gridSize: { cols: 5, rows: 10 } },
+      ar_ice_rocks: { gridTexture: 'assets/textures/grid-Arctic---Rocks-and-Ice.png', gridSize: { cols: 5, rows: 10 } },
       // Volcanic sets
-      vo_basalt: { gridTexture: 'textures/grid-Volcano---Basalt.png', gridSize: { cols: 5, rows: 10 } },
-      vo_volcanic_crater: { gridTexture: 'textures/grid-Volcano---Lava-Lake.png', gridSize: { cols: 5, rows: 10 } },
-      vo_lava_flows: { gridTexture: 'textures/grid-Volcano---Lava-flow.png', gridSize: { cols: 5, rows: 10 } },
+      vo_basalt: { gridTexture: 'assets/textures/grid-Volcano---Basalt.png', gridSize: { cols: 5, rows: 10 } },
+      vo_volcanic_crater: { gridTexture: 'assets/textures/grid-Volcano---Lava-Lake.png', gridSize: { cols: 5, rows: 10 } },
+      vo_lava_flows: { gridTexture: 'assets/textures/grid-Volcano---Lava-flow.png', gridSize: { cols: 5, rows: 10 } },
       // Marshland sets
-      ms_marsh: { gridTexture: 'textures/grid-Marshland---Marsh.png', gridSize: { cols: 5, rows: 10 } },
-      ms_swamp_streams: { gridTexture: 'textures/grid-Marshland---Swamp-and-Causeways.png', gridSize: { cols: 5, rows: 10 } },
-      ms_fetid_forest: { gridTexture: 'textures/grid-Marshland---Fetid-Forest.png', gridSize: { cols: 5, rows: 10 } },
+      ms_marsh: { gridTexture: 'assets/textures/grid-Marshland---Marsh.png', gridSize: { cols: 5, rows: 10 } },
+      ms_swamp_streams: { gridTexture: 'assets/textures/grid-Marshland---Swamp-and-Causeways.png', gridSize: { cols: 5, rows: 10 } },
+      ms_fetid_forest: { gridTexture: 'assets/textures/grid-Marshland---Fetid-Forest.png', gridSize: { cols: 5, rows: 10 } },
       // Tavern sets
-      tv_walls: { gridTexture: 'textures/grid-Tavern-Walls.png', gridSize: { cols: 5, rows: 10 } },
-      tv_floors: { gridTexture: 'textures/grid-Tavern-floor.png', gridSize: { cols: 5, rows: 10 } },
+      tv_walls: { gridTexture: 'assets/textures/grid-Tavern-Walls.png', gridSize: { cols: 5, rows: 10 } },
+      tv_floors: { gridTexture: 'assets/textures/grid-Tavern-floor.png', gridSize: { cols: 5, rows: 10 } },
       // Cavern sets
-      cv_walls: { gridTexture: 'textures/grid-Cavern-walls.png', gridSize: { cols: 5, rows: 10 } },
-      cv_floors: { gridTexture: 'textures/grid-Cavern-floors.png', gridSize: { cols: 5, rows: 10 } },
+      cv_walls: { gridTexture: 'assets/textures/grid-Cavern-walls.png', gridSize: { cols: 5, rows: 10 } },
+      cv_floors: { gridTexture: 'assets/textures/grid-Cavern-floors.png', gridSize: { cols: 5, rows: 10 } },
       // Street sets
-      st_road: { gridTexture: 'textures/grid-Streets---Road.png', gridSize: { cols: 5, rows: 10 } },
-      st_market: { gridTexture: 'textures/grid-Streets---Market.png', gridSize: { cols: 5, rows: 10 } },
+      st_road: { gridTexture: 'assets/textures/grid-Streets---Road.png', gridSize: { cols: 5, rows: 10 } },
+      st_market: { gridTexture: 'assets/textures/grid-Streets---Market.png', gridSize: { cols: 5, rows: 10 } },
       // Dungeon sets
-      dg_walls: { gridTexture: 'textures/grid-Dungeons---Walls.png', gridSize: { cols: 5, rows: 10 } },
-      dg_floors: { gridTexture: 'textures/grid-Dungeons---Floors.png', gridSize: { cols: 5, rows: 10 } },
+      dg_walls: { gridTexture: 'assets/textures/grid-Dungeons---Walls.png', gridSize: { cols: 5, rows: 10 } },
+      dg_floors: { gridTexture: 'assets/textures/grid-Dungeons---Floors.png', gridSize: { cols: 5, rows: 10 } },
       // Shadowlands sets
-      sh_cursed_earth: { gridTexture: 'textures/grid-Shadowlands---Cursed-Earth.png', gridSize: { cols: 5, rows: 10 } },
-      sh_dead_forest: { gridTexture: 'textures/grid-Shadowlands---Dead-Forest.png', gridSize: { cols: 5, rows: 10 } },
-      sh_twisted_roads_and_ruins: { gridTexture: 'textures/grid-Shadowlands---Twisted-Roads-and-Ruins.png', gridSize: { cols: 5, rows: 10 } },
+      sh_cursed_earth: { gridTexture: 'assets/textures/grid-Shadowlands---Cursed-Earth.png', gridSize: { cols: 5, rows: 10 } },
+      sh_dead_forest: { gridTexture: 'assets/textures/grid-Shadowlands---Dead-Forest.png', gridSize: { cols: 5, rows: 10 } },
+      sh_twisted_roads_and_ruins: { gridTexture: 'assets/textures/grid-Shadowlands---Twisted-Roads-and-Ruins.png', gridSize: { cols: 5, rows: 10 } },
       // Modern city sets
-      mc_concrete: { gridTexture: 'textures/grid-Modern-city---Concrete.png', gridSize: { cols: 5, rows: 10 } },
-      mc_streets: { gridTexture: 'textures/grid-Modern-city---Streets.png', gridSize: { cols: 5, rows: 10 } },
-      mc_pavement: { gridTexture: 'textures/grid-Modern-city---Pavement.png', gridSize: { cols: 5, rows: 10 } },
+      mc_concrete: { gridTexture: 'assets/textures/grid-Modern-city---Concrete.png', gridSize: { cols: 5, rows: 10 } },
+      mc_streets: { gridTexture: 'assets/textures/grid-Modern-city---Streets.png', gridSize: { cols: 5, rows: 10 } },
+      mc_pavement: { gridTexture: 'assets/textures/grid-Modern-city---Pavement.png', gridSize: { cols: 5, rows: 10 } },
       // Castle building sets
-      cb_walls: { gridTexture: 'textures/grid-Castle-buildings---Walls.png', gridSize: { cols: 5, rows: 10 } },
-      cb_floors: { gridTexture: 'textures/grid-Castle-buildings---Floors.png', gridSize: { cols: 5, rows: 10 } },
+      cb_walls: { gridTexture: 'assets/textures/grid-Castle-buildings---Walls.png', gridSize: { cols: 5, rows: 10 } },
+      cb_floors: { gridTexture: 'assets/textures/grid-Castle-buildings---Floors.png', gridSize: { cols: 5, rows: 10 } },
       // Blank sets - using grassland as fallback since no brick textures found
-      bk_brown: { gridTexture: 'textures/grid-Grassland---plain-grass.png', gridSize: { cols: 5, rows: 10 } },
-      bk_gray: { gridTexture: 'textures/grid-Grassland---plain-grass.png', gridSize: { cols: 5, rows: 10 } }
+      bk_brown: { gridTexture: 'assets/textures/grid-Grassland---plain-grass.png', gridSize: { cols: 5, rows: 10 } },
+      bk_gray: { gridTexture: 'assets/textures/grid-Grassland---plain-grass.png', gridSize: { cols: 5, rows: 10 } }
     };
 
     return textureConfigs[biomeId] || null;
@@ -525,7 +525,7 @@ const bootstrapApp = () => {
     applyMaterialsToTileObject,
     hexSize,
     tileHeight,
-  tileVerticalGapRatio: TILE_VERTICAL_GAP_RATIO,
+    tileVerticalGapRatio: TILE_VERTICAL_GAP_RATIO,
     baseRotationX: BASE_ROTATION_X,
     baseRotationY: BASE_ROTATION_Y,
     tileScale: TILE_SCALE,
@@ -879,7 +879,7 @@ const bootstrapApp = () => {
       ghostTile.rotation.z = 0;
     }
   }
-  
+
   function clampVectorToBoard(vector, marginX, marginZ) {
     if (!boardBoundsInitialized || !vector) return false;
 
@@ -907,7 +907,7 @@ const bootstrapApp = () => {
   // =========================
   // HEX COORDINATE HELPERS (from original app.js)
   // =========================
-  
+
   function worldToAxial(position) {
     const q = (Math.sqrt(3) / 3 * position.x - 1 / 3 * position.z) / hexSize;
     const r = (2 / 3 * position.z) / hexSize;
@@ -931,8 +931,8 @@ const bootstrapApp = () => {
   function getNeighborCoordinates(q, r) {
     return [
       { q: q + 1, r: r - 1 }, { q: q + 1, r: r },
-      { q: q, r: r + 1 },     { q: q - 1, r: r + 1 },
-      { q: q - 1, r: r },     { q: q, r: r - 1 }
+      { q: q, r: r + 1 }, { q: q - 1, r: r + 1 },
+      { q: q - 1, r: r }, { q: q, r: r - 1 }
     ];
   }
 
@@ -964,7 +964,7 @@ const bootstrapApp = () => {
       return 0;
     }
 
-  const cursorLevel = worldYToNearestLevel(cursorWorldY);
+    const cursorLevel = worldYToNearestLevel(cursorWorldY);
     let below = -1, above = 51;
     for (const y of local) {
       if (y <= cursorLevel && y > below) below = y;
@@ -1093,49 +1093,49 @@ const bootstrapApp = () => {
     registerAsset('hex-tile-model', 'Hexagonal Tile Model', 'model');
     registerAsset('fonts-interface', 'Interface Fonts', 'font');
     registerAsset('icons-ui', 'UI Icons', 'icons');
-    
+
     // Grassland biome textures
     registerAsset('textures-grassland-plain', 'Grassland Textures - Plains', 'texture');
     registerAsset('textures-grassland-streams', 'Grassland Textures - Streams', 'texture');
     registerAsset('textures-grassland-forest', 'Grassland Textures - Forest', 'texture');
-    
+
     // Barrenland biome textures
     registerAsset('textures-barrenland-earth', 'Barrenland Textures - Earth', 'texture');
     registerAsset('textures-barrenland-streams', 'Barrenland Textures - Streams', 'texture');
     registerAsset('textures-barrenland-forest', 'Barrenland Textures - Forest', 'texture');
-    
+
     // Mountain biome textures
     registerAsset('textures-mountain-stone', 'Mountain Textures - Stone', 'texture');
     registerAsset('textures-mountain-streams', 'Mountain Textures - Streams & Forest', 'texture');
-    
+
     // Oceanic biome textures
     registerAsset('textures-oceanic-water', 'Oceanic Textures - Water', 'texture');
     registerAsset('textures-oceanic-coastal', 'Oceanic Textures - Coastal', 'texture');
     registerAsset('textures-oceanic-tropical', 'Oceanic Textures - Tropical Island', 'texture');
-    
+
     // Desert biome textures
     registerAsset('textures-desert-sand', 'Desert Textures - Sand', 'texture');
     registerAsset('textures-desert-tracks', 'Desert Textures - Tracks & Ridgelines', 'texture');
     registerAsset('textures-desert-oases', 'Desert Textures - Oases & Ruins', 'texture');
-    
+
     // Arctic biome textures
     registerAsset('textures-arctic-snow', 'Arctic Textures - Snow', 'texture');
     registerAsset('textures-arctic-forest', 'Arctic Textures - Frozen Forest', 'texture');
     registerAsset('textures-arctic-ice', 'Arctic Textures - Ice & Rocks', 'texture');
-    
+
     // Volcano biome textures
     registerAsset('textures-volcano-basalt', 'Volcano Textures - Basalt', 'texture');
     registerAsset('textures-volcano-crater', 'Volcano Textures - Crater', 'texture');
     registerAsset('textures-volcano-lava', 'Volcano Textures - Lava Flows', 'texture');
-    
+
     // Marshland biome textures
     registerAsset('textures-marsh-marsh', 'Marshland Textures - Marsh', 'texture');
     registerAsset('textures-marsh-swamp', 'Marshland Textures - Swamp & Streams', 'texture');
     registerAsset('textures-marsh-forest', 'Marshland Textures - Fetid Forest', 'texture');
-    
+
     // Load hex tile model with tracking
-    loadHexTileModel({ 
-      url: 'models/hex_tile.gltf',
+    loadHexTileModel({
+      url: 'assets/models/hex_tile.gltf',
       assetId: 'hex-tile-model',
       assetName: 'Hexagonal Tile Model'
     })
@@ -1150,7 +1150,7 @@ const bootstrapApp = () => {
           refreshGhostMaterials();
         }
         lightingController?.refreshForLightingMode?.();
-        
+
         // Simulate loading other assets for demo
         simulateAssetLoading();
       })
@@ -1170,41 +1170,41 @@ const bootstrapApp = () => {
     const assets = [
       { id: 'fonts-interface', delay: 150 },
       { id: 'icons-ui', delay: 300 },
-      
+
       // Grassland biome (core set)
       { id: 'textures-grassland-plain', delay: 500 },
       { id: 'textures-grassland-streams', delay: 650 },
       { id: 'textures-grassland-forest', delay: 800 },
-      
+
       // Barrenland biome
       { id: 'textures-barrenland-earth', delay: 950 },
       { id: 'textures-barrenland-streams', delay: 1100 },
       { id: 'textures-barrenland-forest', delay: 1250 },
-      
+
       // Mountain biome
       { id: 'textures-mountain-stone', delay: 1400 },
       { id: 'textures-mountain-streams', delay: 1550 },
-      
+
       // Oceanic biome
       { id: 'textures-oceanic-water', delay: 1700 },
       { id: 'textures-oceanic-coastal', delay: 1850 },
       { id: 'textures-oceanic-tropical', delay: 2000 },
-      
+
       // Desert biome
       { id: 'textures-desert-sand', delay: 2150 },
       { id: 'textures-desert-tracks', delay: 2300 },
       { id: 'textures-desert-oases', delay: 2450 },
-      
+
       // Arctic biome
       { id: 'textures-arctic-snow', delay: 2600 },
       { id: 'textures-arctic-forest', delay: 2750 },
       { id: 'textures-arctic-ice', delay: 2900 },
-      
+
       // Volcano biome
       { id: 'textures-volcano-basalt', delay: 3050 },
       { id: 'textures-volcano-crater', delay: 3200 },
       { id: 'textures-volcano-lava', delay: 3350 },
-      
+
       // Marshland biome
       { id: 'textures-marsh-marsh', delay: 3500 },
       { id: 'textures-marsh-swamp', delay: 3650 },
@@ -1973,7 +1973,7 @@ const bootstrapApp = () => {
     firstPersonState.sprint = false;
     firstPersonState.pointerLocked = false;
 
-  activeCameraPreset = previousOrbitPreset || 'default';
+    activeCameraPreset = previousOrbitPreset || 'default';
 
     controls.enabled = true;
     document.body?.classList.remove('camera-first-person');
@@ -2006,8 +2006,8 @@ const bootstrapApp = () => {
     const startPosition = getFirstPersonStartPosition(bounds);
     camera.position.copy(startPosition);
 
-  const lookTarget = bounds.target.clone();
-  lookTarget.y = Math.max(bounds.minY + tileHeight * 0.5, bounds.minY + tileHeight);
+    const lookTarget = bounds.target.clone();
+    lookTarget.y = Math.max(bounds.minY + tileHeight * 0.5, bounds.minY + tileHeight);
     camera.lookAt(lookTarget);
 
     firstPersonEuler.setFromQuaternion(camera.quaternion, 'YXZ');
@@ -2018,7 +2018,7 @@ const bootstrapApp = () => {
     document.body?.classList.add('camera-first-person');
     syncCameraButtonState();
 
-  lastMouseEvent = null;
+    lastMouseEvent = null;
 
     document.addEventListener('pointerlockchange', handlePointerLockChange);
     document.addEventListener('mousemove', handlePointerMove);
@@ -2469,13 +2469,13 @@ const bootstrapApp = () => {
       return;
     }
 
-  const collapsedButtons = Array.from(stack.querySelectorAll('.control-pill'));
+    const collapsedButtons = Array.from(stack.querySelectorAll('.control-pill'));
     const collapseButton = stack.querySelector('#overlay-control-collapse');
     const expanded = stack.querySelector('#overlay-control-expanded');
     const cameraToolbarEl = document.getElementById('camera-toolbar');
     const viewToolbarEl = document.getElementById('view-toolbar');
 
-  stack.classList.add('is-collapsed');
+    stack.classList.add('is-collapsed');
 
     const focusTargets = {
       camera: () => cameraToolbarEl?.querySelector('.camera-btn'),
@@ -2625,7 +2625,7 @@ const bootstrapApp = () => {
         }
       });
 
-  appLog.log('🔄 Reset all tile instance limits after map clear');
+      appLog.log('🔄 Reset all tile instance limits after map clear');
     }
 
     updateHeaderStats();
@@ -2700,7 +2700,7 @@ const bootstrapApp = () => {
   // =========================
   // MAP SAVE/LOAD SYSTEM
   // =========================
-  
+
   function saveMapToFile() {
     const mapNameInput = document.getElementById('map-name-input');
     const mapName = mapNameInput?.value?.trim() || 'Unnamed Map';
@@ -2716,8 +2716,8 @@ const bootstrapApp = () => {
       return;
     }
 
-  persistenceController.saveMapWithName(mapName);
-  appLog.log('💾 Map saved from right panel');
+    persistenceController.saveMapWithName(mapName);
+    appLog.log('💾 Map saved from right panel');
   }
 
   function loadMapFromFile(event) {
@@ -2769,7 +2769,7 @@ const bootstrapApp = () => {
     }
 
     appLog.log(`🔗 Loading shared map: ${shareId}`);
-    
+
     try {
       await persistenceController.loadMapFromShareId(shareId, {
         skipConfirm: true,
@@ -2777,7 +2777,7 @@ const bootstrapApp = () => {
         notify: true
       });
       shareLinkBootstrapHandled = true;
-      
+
       // Remove share parameter from URL to prevent reload loop
       const url = new URL(window.location.href);
       url.searchParams.delete('share');
@@ -2786,12 +2786,12 @@ const bootstrapApp = () => {
     } catch (error) {
       console.error('❌ Unable to load shared map from URL:', error);
       shareLinkBootstrapHandled = true;
-      
+
       // Remove share parameter even on error to prevent reload loop
       const url = new URL(window.location.href);
       url.searchParams.delete('share');
       window.history.replaceState({}, '', url.toString());
-      
+
       showNotification({
         type: 'error',
         title: 'Unable to load shared map',
@@ -2802,7 +2802,7 @@ const bootstrapApp = () => {
   }
 
   // Placeholder functions for mouse events and stats
-  function onPointerDown(event) { 
+  function onPointerDown(event) {
     if (isMobileViewerMode()) {
       return;
     }
@@ -2830,8 +2830,8 @@ const bootstrapApp = () => {
       endBrushStroke();
     }
   }
-  
-  function onPointerUp(event) { 
+
+  function onPointerUp(event) {
     if (isMobileViewerMode()) {
       return;
     }
@@ -2846,13 +2846,13 @@ const bootstrapApp = () => {
     const timeDiff = Date.now() - mouseDownTime;
     const distance = Math.hypot(event.clientX - mouseDownPosition.x, event.clientY - mouseDownPosition.y);
     if (timeDiff < CLICK_THRESHOLD && distance < DRAG_THRESHOLD && !isDragging) {
-  appLog.log('Canvas click detected');
+      appLog.log('Canvas click detected');
       handleMapClick(event);
     }
     isDragging = false;
   }
-  
-  function onPointerMove(event) { 
+
+  function onPointerMove(event) {
     if (isMobileViewerMode()) {
       return;
     }
@@ -2908,12 +2908,12 @@ const bootstrapApp = () => {
       updateLevelIndicator();
     }
 
-  const maxAllowedHeight = getMaxAllowedHeight(finalQ, finalR);
-  const effectiveYLevel = Math.min(currentYLevel, maxAllowedHeight);
+    const maxAllowedHeight = getMaxAllowedHeight(finalQ, finalR);
+    const effectiveYLevel = Math.min(currentYLevel, maxAllowedHeight);
 
     const x = hexSize * Math.sqrt(3) * (finalQ + finalR / 2);
     const z = hexSize * 1.5 * finalR;
-  const y = levelToWorldY(effectiveYLevel);
+    const y = levelToWorldY(effectiveYLevel);
 
     ghostTile.position.set(x, y, z);
     ghostTile.rotation.y = BASE_ROTATION_Y + currentRotation;
@@ -2951,7 +2951,7 @@ const bootstrapApp = () => {
     }
 
     const advancedEnabled = isAdvancedLightingEnabled();
-    
+
     if (canPlace && !isOccupied && selectedTile) {
       // Use white ghost tile material like createOrUpdateGhostTile
       const ghostMaterials = createGhostMaterials();
@@ -2971,7 +2971,7 @@ const bootstrapApp = () => {
           child.material = collisionMaterials[meshIndex] || collisionMaterials[0];
           child.material.needsUpdate = true;
           child.castShadow = false;
-              child.receiveShadow = advancedEnabled;
+          child.receiveShadow = advancedEnabled;
           meshIndex++;
         }
       });
@@ -3016,65 +3016,65 @@ const bootstrapApp = () => {
     if (placementMode !== 'unlimited') return;
     if (!selectedTile || !selectedTileInfo) return;
     if (!isWithinHexGrid(q, r)) return;
-    
+
     const cellKey = `q:${q},r:${r}`;
-    
+
     // Already painted this cell in current stroke
     if (brushPaintedCells.has(cellKey)) {
       appLog.log(`⏭️ Brush skip: ${cellKey} already painted in this stroke`);
       return;
     }
-    
+
     // Same cell as last - skip to prevent double placement
     if (brushLastCellKey && brushLastCellKey === cellKey) {
       appLog.log(`⏭️ Brush skip: ${cellKey} same as last cell`);
       return;
     }
-    
+
     // Must be adjacent to last cell (except for first cell)
     if (brushLastCellKey && !areCellKeysAdjacent(brushLastCellKey, cellKey)) {
       appLog.log(`⏭️ Brush skip: ${cellKey} not adjacent to ${brushLastCellKey}`);
       return;
     }
-    
+
     // Compute the lowest available level for this cell
     const lowestLevel = getLowestPossibleLevel(q, r);
     if (!Number.isFinite(lowestLevel)) {
       appLog.log(`⚠️ Brush skip: no valid level found for ${cellKey}`);
       return;
     }
-    
+
     // Set brush level on first placement only
     if (brushActiveLevel == null) {
       brushActiveLevel = lowestLevel;
       appLog.log(`🎨 Brush stroke started at level ${brushActiveLevel} for cell ${cellKey}`);
     }
-    
+
     // Always use the locked brush level
     const targetLevel = brushActiveLevel;
     const targetTileKey = `q:${q},r:${r},y:${targetLevel}`;
-    
+
     // Skip if this exact position is occupied
     if (placedTiles.has(targetTileKey)) {
       appLog.log(`⚠️ Brush skip: ${targetTileKey} already occupied`);
       return;
     }
-    
+
     // Skip if placement rules forbid this level
     if (!canPlaceTileAtHeight(q, r, targetLevel)) {
       appLog.log(`⚠️ Brush skip: cannot place at ${targetTileKey} (placement rules)`);
       return;
     }
-    
+
     // Mark as painted BEFORE placement to prevent race condition
     brushPaintedCells.add(cellKey);
     brushPaintedKeys.add(targetTileKey);
-    
+
     appLog.log(`🔨 Attempting placement at ${targetTileKey}`);
-    
+
     // Attempt placement
     const placementSucceeded = placeTileAtHex({ q, r }, targetLevel);
-    
+
     if (!placementSucceeded) {
       // Rollback on failure
       brushPaintedCells.delete(cellKey);
@@ -3082,9 +3082,9 @@ const bootstrapApp = () => {
       appLog.log(`❌ Brush placement failed at ${cellKey}`);
       return;
     }
-    
+
     appLog.log(`✅ Brush painted ${targetTileKey}`);
-    
+
     // Aggressively remove any tiles placed above target level
     let cleanedCount = 0;
     for (let scrubLevel = targetLevel + 1; scrubLevel <= targetLevel + 10; scrubLevel++) {
@@ -3096,11 +3096,11 @@ const bootstrapApp = () => {
         cleanedCount++;
       }
     }
-    
+
     if (cleanedCount > 0) {
       appLog.log(`🧹 Cleaned ${cleanedCount} stacked tile(s) above ${targetTileKey}`);
     }
-    
+
     brushLastCellKey = cellKey;
     brushLastTileKey = targetTileKey;
   }
@@ -3160,7 +3160,7 @@ const bootstrapApp = () => {
   // Focus Environment Packs list (switch tab, focus first pack card image)
   function focusEnvironmentPacksList() {
     appLog.log('🎯 === STARTING focusEnvironmentPacksList ===');
-    
+
     // Switch to the packs tab so the list is visible
     if (uiController && typeof uiController.switchToTab === 'function') {
       appLog.log('📑 Switching to packs tab...');
@@ -3168,11 +3168,11 @@ const bootstrapApp = () => {
     } else {
       appLog.log('⚠️ uiController or switchToTab not available');
     }
-    
+
     // Add delay to ensure tab is switched and DOM is ready
     window.setTimeout(() => {
       appLog.log('🔍 Searching for pack elements...');
-      
+
       // Try to focus the first pack card image (it is focusable via tabindex)
       const firstPackImage = document.querySelector('#tab-packs #packs-grid .card .card-left .card-image');
       if (firstPackImage) {
@@ -3182,7 +3182,7 @@ const bootstrapApp = () => {
       } else {
         appLog.log('❌ First pack image NOT found');
       }
-      
+
       // Fallback: focus the Packs tab button
       const packsTabBtn = Array.from(document.querySelectorAll('.tab-btn')).find(btn => btn.dataset.tab === 'packs');
       if (packsTabBtn) {
@@ -3192,7 +3192,7 @@ const bootstrapApp = () => {
         appLog.log('❌ Could not find any element to focus!');
       }
     }, 200);
-    
+
     return true;
   }
 
@@ -3202,13 +3202,13 @@ const bootstrapApp = () => {
     const biomeSelect = document.getElementById('biome-select');
     if (biomeSelect) {
       appLog.log('✅ Found biome select element');
-      
+
       // Check if dropdown is already focused/open
       const wasAlreadyFocused = document.activeElement === biomeSelect;
       appLog.log(`📌 Dropdown already focused: ${wasAlreadyFocused}`);
-      
+
       ensureLeftPanelAndFocus(biomeSelect, { block: 'nearest' });
-      
+
       // Only try to open dropdown if it wasn't already focused
       // (to avoid re-opening animation when already open)
       if (!wasAlreadyFocused) {
@@ -3235,7 +3235,7 @@ const bootstrapApp = () => {
       } else {
         appLog.log('ℹ️ Dropdown already open, skipping re-open animation');
       }
-      
+
       return true;
     }
     appLog.log('❌ Biome select element not found');
@@ -3263,7 +3263,7 @@ const bootstrapApp = () => {
       return;
     }
     appLog.log('🖱️ Map clicked');
-    
+
     // Check if user needs guidance (no pack selected or no tile selected)
     if (!selectedTile || !selectedTileInfo || !hexTileModel) {
       // New UX: direct focus to Packs or Biome selector to help the user proceed
@@ -3283,7 +3283,7 @@ const bootstrapApp = () => {
     const raycaster = new THREE.Raycaster();
     raycaster.setFromCamera(mouse, camera);
     const intersects = raycaster.intersectObjects(interactableObjects, true);
-    
+
     if (intersects.length === 0) return;
 
     let firstIntersect = intersects[0];
@@ -3343,7 +3343,7 @@ const bootstrapApp = () => {
     }
 
     const key = `q:${hexCoords.q},r:${hexCoords.r},y:${yLevel}`;
-    
+
     // Check if position is already occupied
     if (placedTiles.has(key)) {
       appLog.log(`❌ Position ${key} is already occupied`);
@@ -3358,7 +3358,7 @@ const bootstrapApp = () => {
         left = tileInstanceLimits.get(selectedTileInfo.instanceId) ?? 0;
       }
       if (left <= 0) {
-  const advanced = uiController?.advanceToNextAvailableInstance?.(selectedTileInfo.biomeId, selectedTileInfo.instanceId) ?? false;
+        const advanced = uiController?.advanceToNextAvailableInstance?.(selectedTileInfo.biomeId, selectedTileInfo.instanceId) ?? false;
         if (!advanced) return placementSucceeded;
         const left2 = tileInstanceLimits.get(selectedTileInfo.instanceId) ?? 0;
         if (left2 <= 0) return placementSucceeded;
@@ -3380,7 +3380,7 @@ const bootstrapApp = () => {
 
     // Position the tile using original app.js formula
     const x = hexSize * Math.sqrt(3) * (hexCoords.q + hexCoords.r / 2);
-  const y = levelToWorldY(yLevel);
+    const y = levelToWorldY(yLevel);
     const z = hexSize * 1.5 * hexCoords.r;
     newTile.position.set(x, y, z);
     newTile.rotation.x = BASE_ROTATION_X;
@@ -3391,22 +3391,22 @@ const bootstrapApp = () => {
     newTile.rotation.y = BASE_ROTATION_Y + sceneRotationRadians;
     newTile.scale.set(TILE_SCALE, TILE_SCALE, TILE_SCALE);
 
-  appLog.log(`🔄 Tile rotation: base=${BASE_ROTATION_Y}, requested=${currentRotation}, snapped=${sceneRotationRadians}, final=${BASE_ROTATION_Y + sceneRotationRadians}, placementMode=${placementMode}`);
+    appLog.log(`🔄 Tile rotation: base=${BASE_ROTATION_Y}, requested=${currentRotation}, snapped=${sceneRotationRadians}, final=${BASE_ROTATION_Y + sceneRotationRadians}, placementMode=${placementMode}`);
 
     scene.add(newTile);
     interactableObjects.push(newTile);
-    
+
     // Store the tile placement with rotation data
     // Convert from 3D rotation to instruction rotation (60° increments)
     // In 3D: 0°=0, 60°=300°, 120°=240°, etc. (clockwise from top view)
     // In instructions: 0°=0, 60°=60°, 120°=120°, etc. (clockwise from flat view)
     const instructionRotation = (360 - snappedSceneDegrees) % 360;
-    
-    placedTiles.set(key, { 
-      name: selectedTileInfo.name, 
+
+    placedTiles.set(key, {
+      name: selectedTileInfo.name,
       biomeId: selectedTileInfo?.biomeId || null,
       tileNumber: selectedTileInfo?.tileNumber || null,
-      object: newTile, 
+      object: newTile,
       instanceId: newTile.userData.instanceId,
       yLevel,
       rotation: {
@@ -3424,9 +3424,9 @@ const bootstrapApp = () => {
     if (placementMode === 'limited' && selectedTileInfo?.instanceId) {
       const leftNow = tileInstanceLimits.get(selectedTileInfo.instanceId) ?? 0;
       if (leftNow > 0) {
-  tileInstanceLimits.set(selectedTileInfo.instanceId, leftNow - 1);
-  appLog.log(`🔄 Used tile ${selectedTileInfo.instanceId}, remaining: ${leftNow - 1}`);
-        
+        tileInstanceLimits.set(selectedTileInfo.instanceId, leftNow - 1);
+        appLog.log(`🔄 Used tile ${selectedTileInfo.instanceId}, remaining: ${leftNow - 1}`);
+
         const usedUp = (tileInstanceLimits.get(selectedTileInfo.instanceId) === 0);
         uiController?.refreshBiomeGridUI?.();
         if (usedUp) {
@@ -3473,7 +3473,7 @@ const bootstrapApp = () => {
       updateLevelIndicator();
       refreshGhostTile();
     }
-    
+
     // Reset rotation for the next tile to be placed
     currentRotation = 0;
     if (ghostTile) {
@@ -3482,7 +3482,7 @@ const bootstrapApp = () => {
     }
 
     applyLayerVisibility();
-    
+
     appLog.log(`✅ Placed tile ${selectedTileInfo.instanceId} at ${key}`);
     placementSucceeded = true;
     return placementSucceeded;
@@ -3506,7 +3506,7 @@ const bootstrapApp = () => {
 
     const key = `q:${hexCoords.q},r:${hexCoords.r},y:${yLevel}`;
     const tileData = placedTiles.get(key);
-    
+
     if (!tileData) {
       appLog.log(`❌ No tile at position ${key}`);
       return;
@@ -3514,7 +3514,7 @@ const bootstrapApp = () => {
 
     // Find the 3D object to remove
     const tileObject = interactableObjects.find(obj => obj.userData.tileKey === key);
-    
+
     let viewUpdated = false;
 
     if (tileObject) {
@@ -3525,10 +3525,10 @@ const bootstrapApp = () => {
       // Fallback: update state directly
       recordTileRemoval(hexCoords, yLevel);
     }
-    
+
     // Remove 3D object if not already removed
     remove3DTile(key);
-    
+
     // Restore available count in limited mode
     if (placementMode === 'limited' && tileData.instanceId) {
       const originalTotal = perBiomeDenominator.get(tileData.biomeId) || getBiomeTotalSets(tileData.biomeId);
@@ -3541,7 +3541,7 @@ const bootstrapApp = () => {
         appLog.log(`🔄 Tile ${tileData.instanceId} already at maximum availability: ${current}/${originalTotal}`);
       }
     }
-    
+
     // Update UI
     updateHeaderStats();
     updateRightPanelStats();
@@ -3556,13 +3556,13 @@ const bootstrapApp = () => {
       applyLayerVisibility();
       refreshGhostTile();
     }
-    
+
     appLog.log(`✅ Removed tile from ${key}`);
   }
 
   function removeTileByKey(tileKey) {
     const tileData = placedTiles.get(tileKey);
-    
+
     if (!tileData) {
       appLog.log(`❌ No tile found with key ${tileKey}`);
       return;
@@ -3582,13 +3582,13 @@ const bootstrapApp = () => {
   // =========================
   function remove3DTile(key) {
     const tileIndex = interactableObjects.findIndex(obj => obj.userData.tileKey === key);
-    
+
     if (tileIndex !== -1) {
       const tileObj = interactableObjects[tileIndex];
       scene.remove(tileObj);
       interactableObjects.splice(tileIndex, 1);
-      
-  appLog.log(`✅ Removed 3D tile from ${key}`);
+
+      appLog.log(`✅ Removed 3D tile from ${key}`);
       return true;
     } else {
       appLog.log(`❌ Could not find 3D tile with key ${key}`);
@@ -3600,11 +3600,11 @@ const bootstrapApp = () => {
   // UNDO/REDO SYSTEM
   // =========================
   // (Managed by createUndoRedoController)
-  
+
   // =========================
   // ENHANCED STATISTICS PANEL
   // =========================
-  
+
   /**
    * Updates the controls hint display based on the current placement mode
    * @param {string} mode - The placement mode ('limited' or 'unlimited')
@@ -3612,22 +3612,22 @@ const bootstrapApp = () => {
   function updateControlsHintForMode(mode) {
     const controlsHint = document.getElementById('controls-hint');
     if (!controlsHint) return;
-    
+
     const longHint = controlsHint.querySelector('.hint-long');
     const shortHint = controlsHint.querySelector('.hint-short');
-    
+
     if (!longHint || !shortHint) return;
-    
+
     // Define the base controls text (without mode-specific additions)
     const baseControls = {
       long: '<strong>Controls:</strong> Click: Place | RMB: Remove | R: Rotate | C: Clear | Page Up/Down: Height<br>' +
-            '<strong>Camera:</strong> 1-5 presets • F: First-person • L-Drag: Orbit • RMB-Drag: Pan • Wheel: Zoom<br>' +
-            '<strong>View:</strong> Q: Layer ↓ | E: Layer ↑ | A: Full map | P: Capture view',
+        '<strong>Camera:</strong> 1-5 presets • F: First-person • L-Drag: Orbit • RMB-Drag: Pan • Wheel: Zoom<br>' +
+        '<strong>View:</strong> Q: Layer ↓ | E: Layer ↑ | A: Full map | P: Capture view',
       short: '<strong>Controls:</strong> Click=Place • RMB=Remove • R=Rotate • C=Clear • PgUp/Down=Height<br>' +
-             '<strong>Camera:</strong> 1-5 presets • F=FP • L-Drag=Orbit • R-Drag=Pan • Wheel=Zoom<br>' +
-             '<strong>View:</strong> Q=Layer↓ • E=Layer↑ • A=Full • P=Capture'
+        '<strong>Camera:</strong> 1-5 presets • F=FP • L-Drag=Orbit • R-Drag=Pan • Wheel=Zoom<br>' +
+        '<strong>View:</strong> Q=Layer↓ • E=Layer↑ • A=Full • P=Capture'
     };
-    
+
     // Add brush mode hint for unlimited mode
     if (mode === 'unlimited') {
       longHint.innerHTML = baseControls.long + '<br><strong>Brush:</strong> Hold Shift + Drag: Paint tiles';
@@ -3638,7 +3638,7 @@ const bootstrapApp = () => {
       shortHint.innerHTML = baseControls.short;
     }
   }
-  
+
   function updateHeaderStats() {
     analyticsController?.updateHeaderStats?.();
   }
@@ -3646,14 +3646,14 @@ const bootstrapApp = () => {
   function updateRightPanelStats() {
     analyticsController?.updateRightPanelStats?.();
   }
-  
+
   // =========================
   // ENHANCED TILE OPERATIONS WITH UNDO SUPPORT
   // =========================  // Note: placeTile override removed - undo support added directly to placeTileAtHex
-  
+
   function removeTileObject(tileObject) {
     if (!tileObject || !tileObject.userData.isTile) return;
-    
+
     // Save state for undo before removing
     const undoAction = {
       type: 'remove',
@@ -3675,9 +3675,9 @@ const bootstrapApp = () => {
         z: tileObject.rotation.z
       }
     };
-    
+
     addToUndoStack(undoAction);
-    
+
     // Remove tile from scene directly
     const tileKey = tileObject.userData.tileKey;
     const tileData = placedTiles.get(tileKey);
@@ -3685,7 +3685,7 @@ const bootstrapApp = () => {
       scene.remove(tileData.object);
       const idx = interactableObjects.indexOf(tileData.object);
       if (idx > -1) interactableObjects.splice(idx, 1);
-      
+
       // Restore tile instance limit
       if (placementMode === 'limited' && tileObject.userData.instanceId) {
         const biomeId = tileObject.userData.biomeId;
@@ -3696,20 +3696,20 @@ const bootstrapApp = () => {
           tileInstanceLimits.set(tileObject.userData.instanceId, current + 1);
         }
       }
-      
-    placedTiles.delete(tileKey);
-    if (placementMode === 'unlimited' && tileObject.userData.instanceId) {
-      uiController?.updateUnlimitedSlotDisplay?.(tileObject.userData.instanceId);
-    } else {
-      uiController?.refreshBiomeGridUI?.();
-    }
-    updateHeaderStats();
-    updateRightPanelStats();
-    applyLayerVisibility();
-    refreshGhostTile();
+
+      placedTiles.delete(tileKey);
+      if (placementMode === 'unlimited' && tileObject.userData.instanceId) {
+        uiController?.updateUnlimitedSlotDisplay?.(tileObject.userData.instanceId);
+      } else {
+        uiController?.refreshBiomeGridUI?.();
+      }
+      updateHeaderStats();
+      updateRightPanelStats();
+      applyLayerVisibility();
+      refreshGhostTile();
     }
   }
-  
+
   function init() {
     initializeMobileViewerMode();
     // Initialize welcome screen controller
@@ -3721,7 +3721,7 @@ const bootstrapApp = () => {
         mapNameInput.focus();
       }
     });
-    
+
     analyticsController = createAnalyticsController({
       stateManager,
       biomeSets,
@@ -3741,12 +3741,12 @@ const bootstrapApp = () => {
       }
     });
 
-  analytics = analyticsController.initialize();
-  appLog.log('📊 Analytics system initialized');
+    analytics = analyticsController.initialize();
+    appLog.log('📊 Analytics system initialized');
 
-  if (isMobileViewerMode()) {
-    updateMobileAnalyticsPanel();
-  }
+    if (isMobileViewerMode()) {
+      updateMobileAnalyticsPanel();
+    }
 
     uiController = createUIController({
       environmentPacks,
@@ -3795,16 +3795,16 @@ const bootstrapApp = () => {
     highlightHex.visible = false;
     scene.add(highlightHex);
 
-  applyCameraPreset('default', { immediate: true, skipButtonSync: true });
+    applyCameraPreset('default', { immediate: true, skipButtonSync: true });
 
     initializeNewUI();
-  lightingController?.setupToggle?.();
+    lightingController?.setupToggle?.();
     fixExistingBiomeIds();
     loadAssets();
     createHexGrid();
     setupEventListeners();
     animate();
-    
+
     // Delay share load until after scene is fully initialized
     setTimeout(() => {
       void handleInitialShareLoad();
@@ -3913,7 +3913,7 @@ const bootstrapApp = () => {
       saveMapToFileToolbar();
     }
   });
-  
+
   function onWindowResize() {
     resizeRenderer();
   }
@@ -3922,8 +3922,8 @@ const bootstrapApp = () => {
     disableFirstPerson({ skipPointerUnlock: true });
     lightingController?.dispose?.();
   }
-  
-  
+
+
   // ========================================
   // BUILD INSTRUCTIONS GENERATOR
   // ========================================
@@ -3937,7 +3937,7 @@ const bootstrapApp = () => {
   function generateBuildInstructions() {
     instructionsLog.log('🏗️ Generating build instructions...');
     instructionsLog.log('📊 placedTiles size:', placedTiles.size);
-    
+
     if (placedTiles.size === 0) {
       showNotification({
         type: 'warning',
@@ -3947,11 +3947,11 @@ const bootstrapApp = () => {
       });
       return;
     }
-    
+
     // Layer analysis
     const layerAnalysis = analyzeMapLayers();
     instructionsLog.log('📊 Layer analysis result:', layerAnalysis);
-    
+
     if (layerAnalysis.layers.length === 0) {
       showNotification({
         type: 'error',
@@ -3961,13 +3961,13 @@ const bootstrapApp = () => {
       });
       return;
     }
-    
+
     instructionsLog.log(`📊 Found ${layerAnalysis.layers.length} layers`, layerAnalysis);
-    
+
     // Generate instructions
     instructionsRenderer.generateLayerInstructions(layerAnalysis);
   }
-  
+
   function analyzeMapLayers() {
     const layerData = new Map(); // yLevel -> tiles array
     const bounds = { minQ: Infinity, maxQ: -Infinity, minR: Infinity, maxR: -Infinity };
@@ -4070,7 +4070,7 @@ const bootstrapApp = () => {
     updateHeaderStats,
     updateRightPanelStats
   });
-  
+
   init();
 };
 

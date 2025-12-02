@@ -48,4 +48,4 @@ export const MOUSE_CONSTANTS = {
 
 export const MAX_UNDO_HISTORY = 50;
 
-export const PLACEHOLDER_SPRITE_PATH = 'images/grids/placeholder-grid-biome-set.png';
+export const PLACEHOLDER_SPRITE_PATH = 'assets/images/grids/placeholder-grid-biome-set.png';
