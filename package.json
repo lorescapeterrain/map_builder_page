@@ -27,5 +27,8 @@
     "eslint": "^9.8.0",
     "globals": "^15.9.0",
     "vitest": "^1.6.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.53.3"
   }
 }
