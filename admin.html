@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Lorescape Map Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9fafb;
+            --bg-tertiary: #f3f4f6;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --border: #e5e7eb;
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        [data-theme='dark'] {
+            --primary: #10b981;
+            --danger: #f87171;
+            --warning: #fbbf24;
+            --bg-primary: #1f2937;
+            --bg-secondary: #111827;
+            --bg-tertiary: #374151;
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --border: #374151;
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--bg-primary);
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        header .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h1 i {
+            color: var(--primary);
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #059669;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-primary);
+            transform: translateY(-1px);
+        }
+
+        .btn-danger {
+            background: var(--danger);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 16px 10px 40px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+
+        .table-container {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: var(--bg-tertiary);
+            border-bottom: 2px solid var(--border);
+        }
+
+        th {
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr {
+            transition: background 0.2s;
+        }
+
+        tbody tr:hover {
+            background: var(--bg-secondary);
+        }
+
+        .map-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .map-id {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-icon {
+            padding: 6px 10px;
+            border: none;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .btn-icon:hover {
+            background: var(--bg-secondary);
+            transform: translateY(-1px);
+        }
+
+        .btn-icon.danger:hover {
+            background: var(--danger);
+            color: white;
+        }
+
+        .empty-state {
+            padding: 60px 20px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .empty-state i {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .loading i {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .theme-toggle {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+        }
+
+        .modal-close:hover {
+            background: var(--bg-secondary);
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+            margin-top: 24px;
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--bg-primary);
+            padding: 16px 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 2000;
+            animation: slideIn 0.3s;
+            max-width: 400px;
+        }
+
+        .toast.success { border-left: 4px solid var(--primary); }
+        .toast.error { border-left: 4px solid var(--danger); }
+        .toast.warning { border-left: 4px solid var(--warning); }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+        }
+
+        .token-input-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .token-input-box {
+            background: var(--bg-primary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .token-input-box h2 {
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .token-input-box input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .password-input-wrapper {
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .password-input-wrapper input {
+            width: 100%;
+            padding-right: 45px;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            padding: 8px;
+            font-size: 1rem;
+        }
+
+        .password-toggle:hover {
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <div id="token-input" class="token-input-container">
+        <div class="token-input-box">
+            <h2><i class="fas fa-lock"></i> Admin Authentication</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                Enter admin token to access the panel
+            </p>
+            <div class="password-input-wrapper">
+                <input type="password" id="admin-token-input" placeholder="Admin Token" onkeypress="handleTokenKeypress(event)" />
+                <button class="password-toggle" onclick="togglePasswordVisibility()" type="button" title="Show/Hide password">
+                    <i class="fas fa-eye" id="password-toggle-icon"></i>
+                </button>
+            </div>
+            <button class="btn btn-primary" onclick="authenticateAdmin()" style="width: 100%;">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <header>
+            <div class="header-content">
+                <h1>
+                    <i class="fas fa-shield-halved"></i>
+                    Admin Panel
+                </h1>
+                <div style="display: flex; gap: 12px;">
+                    <button class="btn theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="index.html" class="btn btn-secondary">
+                        <i class="fas fa-map"></i> Back to Builder
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-value" id="total-maps">-</div>
+                    <div class="stat-label">Total Maps</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="total-tiles">-</div>
+                    <div class="stat-label">Total Tiles</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="total-size">-</div>
+                    <div class="stat-label">Storage Used</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search maps..." oninput="filterMaps()">
+                </div>
+                <button class="btn btn-primary" onclick="refreshMaps()">
+                    <i class="fas fa-sync"></i> Refresh
+                </button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Map Name</th>
+                            <th>ID</th>
+                            <th>Tiles</th>
+                            <th>Size</th>
+                            <th>Created</th>
+                            <th>Views</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="maps-table-body">
+                        <tr>
+                            <td colspan="7">
+                                <div class="loading">
+                                    <i class="fas fa-spinner fa-2x"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rename Modal -->
+    <div id="rename-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Rename Map</h3>
+                <button class="modal-close" onclick="closeRenameModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="form-group">
+                <label for="new-map-name">New Map Name</label>
+                <input type="text" id="new-map-name" placeholder="Enter new name...">
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeRenameModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="saveRename()">
+                    <i class="fas fa-save"></i> Save
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let adminToken = '';
+        let allMaps = [];
+        let currentRenameId = null;
+
+        // Load theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        }
+
+        function togglePasswordVisibility() {
+            const input = document.getElementById('admin-token-input');
+            const icon = document.getElementById('password-toggle-icon');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+
+        function handleTokenKeypress(event) {
+            if (event.key === 'Enter') {
+                authenticateAdmin();
+            }
+        }
+
+        function authenticateAdmin() {
+            const input = document.getElementById('admin-token-input');
+            adminToken = input.value.trim();
+            
+            if (!adminToken) {
+                showToast('Please enter admin token', 'error');
+                return;
+            }
+
+            console.log('🔐 Attempting authentication with token:', adminToken.substring(0, 5) + '...');
+
+            // Test authentication
+            fetchMaps().then(() => {
+                console.log('✅ Authentication successful');
+                document.getElementById('token-input').classList.add('hidden');
+                document.getElementById('main-content').classList.remove('hidden');
+            }).catch((error) => {
+                console.error('❌ Authentication failed:', error);
+                showToast('Invalid admin token', 'error');
+                adminToken = '';
+            });
+        }
+
+        async function fetchMaps() {
+            const response = await fetch('/api/admin/maps', {
+                headers: {
+                    'X-Admin-Token': adminToken
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error('Authentication failed');
+            }
+
+            const result = await response.json();
+            allMaps = result.data || [];
+            renderMaps(allMaps);
+            updateStats(allMaps);
+            return allMaps;
+        }
+
+        function renderMaps(maps) {
+            const tbody = document.getElementById('maps-table-body');
+            
+            if (maps.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="7">
+                            <div class="empty-state">
+                                <i class="fas fa-inbox"></i>
+                                <p>No maps found</p>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            tbody.innerHTML = maps.map(map => `
+                <tr>
+                    <td>
+                        <div class="map-name">${escapeHtml(map.name || 'Unnamed Map')}</div>
+                    </td>
+                    <td>
+                        <code class="map-id">${escapeHtml(map.id)}</code>
+                    </td>
+                    <td>
+                        <span class="badge">${map.tileCount || 0} tiles</span>
+                    </td>
+                    <td>
+                        <strong>${formatBytes(map.sizeBytes || 0)}</strong>
+                    </td>
+                    <td>${formatDate(map.createdAt)}</td>
+                    <td>${map.accessCount || 0}</td>
+                    <td>
+                        <div class="actions">
+                            <button class="btn-icon" onclick="openRenameModal('${map.id}', '${escapeHtml(map.name)}')" title="Rename">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn-icon" onclick="downloadMap('${map.id}')" title="Download">
+                                <i class="fas fa-download"></i>
+                            </button>
+                            <button class="btn-icon" onclick="openShareLink('${map.id}')" title="Share Link">
+                                <i class="fas fa-link"></i>
+                            </button>
+                            <button class="btn-icon danger" onclick="deleteMap('${map.id}', '${escapeHtml(map.name)}')" title="Delete">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function updateStats(maps) {
+            document.getElementById('total-maps').textContent = maps.length;
+            
+            const totalTiles = maps.reduce((sum, map) => sum + (map.tileCount || 0), 0);
+            document.getElementById('total-tiles').textContent = totalTiles.toLocaleString();
+            
+            const totalBytes = maps.reduce((sum, map) => sum + (map.sizeBytes || 0), 0);
+            document.getElementById('total-size').textContent = formatBytes(totalBytes);
+        }
+
+        function filterMaps() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = allMaps.filter(map => 
+                (map.name || '').toLowerCase().includes(query) ||
+                (map.id || '').toLowerCase().includes(query)
+            );
+            renderMaps(filtered);
+        }
+
+        function refreshMaps() {
+            fetchMaps().then(() => {
+                showToast('Maps refreshed successfully', 'success');
+            }).catch(error => {
+                showToast('Failed to refresh maps', 'error');
+            });
+        }
+
+        function openRenameModal(id, currentName) {
+            currentRenameId = id;
+            document.getElementById('new-map-name').value = currentName;
+            document.getElementById('rename-modal').classList.add('active');
+        }
+
+        function closeRenameModal() {
+            currentRenameId = null;
+            document.getElementById('rename-modal').classList.remove('active');
+        }
+
+        async function saveRename() {
+            const newName = document.getElementById('new-map-name').value.trim();
+            
+            if (!newName) {
+                showToast('Please enter a valid name', 'warning');
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/admin/maps/${currentRenameId}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Admin-Token': adminToken
+                    },
+                    body: JSON.stringify({ name: newName })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to rename map');
+                }
+
+                showToast('Map renamed successfully', 'success');
+                closeRenameModal();
+                refreshMaps();
+            } catch (error) {
+                showToast('Failed to rename map', 'error');
+            }
+        }
+
+        async function downloadMap(id) {
+            try {
+                const response = await fetch(`/api/admin/maps/${id}/download?adminToken=${encodeURIComponent(adminToken)}`);
+                
+                if (!response.ok) {
+                    throw new Error('Failed to download map');
+                }
+
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `map_${id}.lsm`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+
+                showToast('Map downloaded successfully', 'success');
+            } catch (error) {
+                showToast('Failed to download map', 'error');
+            }
+        }
+
+        function openShareLink(id) {
+            const shareUrl = `${window.location.origin}/?share=${id}`;
+            navigator.clipboard.writeText(shareUrl).then(() => {
+                showToast('Share link copied to clipboard', 'success');
+            }).catch(() => {
+                prompt('Share link:', shareUrl);
+            });
+        }
+
+        async function deleteMap(id, name) {
+            if (!confirm(`Are you sure you want to delete "${name}"?\n\nThis action cannot be undone.`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/admin/maps/${id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'X-Admin-Token': adminToken
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to delete map');
+                }
+
+                showToast('Map deleted successfully', 'success');
+                refreshMaps();
+            } catch (error) {
+                showToast('Failed to delete map', 'error');
+            }
+        }
+
+        function showToast(message, type = 'info') {
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            
+            const icons = {
+                success: 'fa-check-circle',
+                error: 'fa-exclamation-circle',
+                warning: 'fa-exclamation-triangle',
+                info: 'fa-info-circle'
+            };
+
+            toast.innerHTML = `
+                <i class="fas ${icons[type]}"></i>
+                <span>${escapeHtml(message)}</span>
+            `;
+
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.animation = 'slideIn 0.3s reverse';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return '-';
+            const date = new Date(dateString);
+            return date.toLocaleString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        function formatBytes(bytes) {
+            if (bytes === 0) return '0 B';
+            const k = 1024;
+            const sizes = ['B', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Close modal on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeRenameModal();
+            }
+        });
+
+        // Close modal on overlay click
+        document.getElementById('rename-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'rename-modal') {
+                closeRenameModal();
+            }
+        });
+    </script>
+</body>
+</html>

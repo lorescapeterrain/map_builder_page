@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "name": "Unnamed Map",
+  "createdAt": "2025-11-13T20:37:07.764Z",
+  "placementMode": "limited",
+  "packCounts": {
+    "ep_grassland_150": 1
+  },
+  "standaloneBiomeSetCounts": {},
+  "tiles": [
+    {
+      "key": "q:-1,r:2,y:0",
+      "q": -1,
+      "r": 2,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_1"
+    }
+  ],
+  "sharedAt": "2025-11-13T20:37:07.772Z"
+}

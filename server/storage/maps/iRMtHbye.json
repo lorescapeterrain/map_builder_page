@@ -1,0 +1,1382 @@
+{
+  "version": "1.0",
+  "name": "Unnamed Map",
+  "createdAt": "2025-10-18T09:58:25.805Z",
+  "placementMode": "limited",
+  "packCounts": {
+    "ep_grassland_150": 1,
+    "ep_barrenland_150": 1,
+    "ep_caverns_150": 1,
+    "ep_desolate_shore_300": 1,
+    "ep_chaos_realm_300": 1,
+    "ep_desert_battlefield_300": 1,
+    "ep_urban_battlefield_300": 1,
+    "ep_oceanic_battlefield_300": 1,
+    "ep_arctic_highland_300": 1,
+    "ep_marshland_150": 1
+  },
+  "standaloneBiomeSetCounts": {},
+  "tiles": [
+    {
+      "key": "q:-4,r:4,y:0",
+      "q": -4,
+      "r": 4,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_1"
+    },
+    {
+      "key": "q:-3,r:3,y:0",
+      "q": -3,
+      "r": 3,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_2"
+    },
+    {
+      "key": "q:-3,r:2,y:0",
+      "q": -3,
+      "r": 2,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_3"
+    },
+    {
+      "key": "q:-2,r:1,y:0",
+      "q": -2,
+      "r": 1,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_4"
+    },
+    {
+      "key": "q:-1,r:0,y:0",
+      "q": -1,
+      "r": 0,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 5,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_5"
+    },
+    {
+      "key": "q:-1,r:-1,y:0",
+      "q": -1,
+      "r": -1,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 6,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_6"
+    },
+    {
+      "key": "q:0,r:-2,y:0",
+      "q": 0,
+      "r": -2,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 7,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_7"
+    },
+    {
+      "key": "q:1,r:-2,y:0",
+      "q": 1,
+      "r": -2,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 8,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_8"
+    },
+    {
+      "key": "q:0,r:-1,y:0",
+      "q": 0,
+      "r": -1,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 9,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_9"
+    },
+    {
+      "key": "q:1,r:-1,y:0",
+      "q": 1,
+      "r": -1,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 10,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_10"
+    },
+    {
+      "key": "q:0,r:0,y:0",
+      "q": 0,
+      "r": 0,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 11,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_11"
+    },
+    {
+      "key": "q:-1,r:1,y:0",
+      "q": -1,
+      "r": 1,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 12,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_12"
+    },
+    {
+      "key": "q:-2,r:2,y:0",
+      "q": -2,
+      "r": 2,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 13,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_13"
+    },
+    {
+      "key": "q:-1,r:2,y:0",
+      "q": -1,
+      "r": 2,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 14,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_14"
+    },
+    {
+      "key": "q:0,r:1,y:0",
+      "q": 0,
+      "r": 1,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 15,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_15"
+    },
+    {
+      "key": "q:1,r:0,y:0",
+      "q": 1,
+      "r": 0,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 16,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_16"
+    },
+    {
+      "key": "q:2,r:-2,y:0",
+      "q": 2,
+      "r": -2,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 17,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_17"
+    },
+    {
+      "key": "q:2,r:-1,y:0",
+      "q": 2,
+      "r": -1,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 18,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_18"
+    },
+    {
+      "key": "q:-2,r:3,y:0",
+      "q": -2,
+      "r": 3,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 19,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_19"
+    },
+    {
+      "key": "q:-3,r:4,y:0",
+      "q": -3,
+      "r": 4,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 20,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_20"
+    },
+    {
+      "key": "q:-2,r:4,y:0",
+      "q": -2,
+      "r": 4,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 21,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_21"
+    },
+    {
+      "key": "q:-1,r:3,y:0",
+      "q": -1,
+      "r": 3,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 22,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_22"
+    },
+    {
+      "key": "q:0,r:2,y:0",
+      "q": 0,
+      "r": 2,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 23,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_23"
+    },
+    {
+      "key": "q:1,r:1,y:0",
+      "q": 1,
+      "r": 1,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 24,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_24"
+    },
+    {
+      "key": "q:2,r:0,y:0",
+      "q": 2,
+      "r": 0,
+      "y": 0,
+      "biomeId": "gs_grass",
+      "tileNumber": 25,
+      "rotationDegrees": 0,
+      "instanceId": "gs_grass_25"
+    },
+    {
+      "key": "q:1,r:6,y:0",
+      "q": 1,
+      "r": 6,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_1"
+    },
+    {
+      "key": "q:2,r:5,y:0",
+      "q": 2,
+      "r": 5,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_2"
+    },
+    {
+      "key": "q:3,r:4,y:0",
+      "q": 3,
+      "r": 4,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_3"
+    },
+    {
+      "key": "q:4,r:4,y:0",
+      "q": 4,
+      "r": 4,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_4"
+    },
+    {
+      "key": "q:3,r:5,y:0",
+      "q": 3,
+      "r": 5,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 5,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_5"
+    },
+    {
+      "key": "q:2,r:6,y:0",
+      "q": 2,
+      "r": 6,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 6,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_6"
+    },
+    {
+      "key": "q:3,r:6,y:0",
+      "q": 3,
+      "r": 6,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 7,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_7"
+    },
+    {
+      "key": "q:4,r:5,y:0",
+      "q": 4,
+      "r": 5,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 8,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_8"
+    },
+    {
+      "key": "q:5,r:4,y:0",
+      "q": 5,
+      "r": 4,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 9,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_9"
+    },
+    {
+      "key": "q:1,r:7,y:0",
+      "q": 1,
+      "r": 7,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 10,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_10"
+    },
+    {
+      "key": "q:2,r:7,y:0",
+      "q": 2,
+      "r": 7,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 11,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_11"
+    },
+    {
+      "key": "q:3,r:7,y:0",
+      "q": 3,
+      "r": 7,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 12,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_12"
+    },
+    {
+      "key": "q:4,r:6,y:0",
+      "q": 4,
+      "r": 6,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 13,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_13"
+    },
+    {
+      "key": "q:5,r:5,y:0",
+      "q": 5,
+      "r": 5,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 14,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_14"
+    },
+    {
+      "key": "q:6,r:4,y:0",
+      "q": 6,
+      "r": 4,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 15,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_15"
+    },
+    {
+      "key": "q:6,r:5,y:0",
+      "q": 6,
+      "r": 5,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 16,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_16"
+    },
+    {
+      "key": "q:5,r:6,y:0",
+      "q": 5,
+      "r": 6,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 17,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_17"
+    },
+    {
+      "key": "q:1,r:8,y:0",
+      "q": 1,
+      "r": 8,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 20,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_20"
+    },
+    {
+      "key": "q:2,r:8,y:0",
+      "q": 2,
+      "r": 8,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 21,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_21"
+    },
+    {
+      "key": "q:1,r:9,y:0",
+      "q": 1,
+      "r": 9,
+      "y": 0,
+      "biomeId": "cv_floors",
+      "tileNumber": 22,
+      "rotationDegrees": 0,
+      "instanceId": "cv_floors_22"
+    },
+    {
+      "key": "q:1,r:6,y:1",
+      "q": 1,
+      "r": 6,
+      "y": 1,
+      "biomeId": "cv_walls",
+      "tileNumber": 27,
+      "rotationDegrees": 120,
+      "instanceId": "cv_walls_27"
+    },
+    {
+      "key": "q:1,r:7,y:1",
+      "q": 1,
+      "r": 7,
+      "y": 1,
+      "biomeId": "cv_walls",
+      "tileNumber": 28,
+      "rotationDegrees": 0,
+      "instanceId": "cv_walls_28"
+    },
+    {
+      "key": "q:0,r:8,y:0",
+      "q": 0,
+      "r": 8,
+      "y": 0,
+      "biomeId": "cv_walls",
+      "tileNumber": 30,
+      "rotationDegrees": 300,
+      "instanceId": "cv_walls_30"
+    },
+    {
+      "key": "q:-1,r:9,y:0",
+      "q": -1,
+      "r": 9,
+      "y": 0,
+      "biomeId": "cv_walls",
+      "tileNumber": 31,
+      "rotationDegrees": 240,
+      "instanceId": "cv_walls_31"
+    },
+    {
+      "key": "q:-1,r:10,y:0",
+      "q": -1,
+      "r": 10,
+      "y": 0,
+      "biomeId": "cv_walls",
+      "tileNumber": 40,
+      "rotationDegrees": 120,
+      "instanceId": "cv_walls_40"
+    },
+    {
+      "key": "q:-1,r:11,y:0",
+      "q": -1,
+      "r": 11,
+      "y": 0,
+      "biomeId": "cv_walls",
+      "tileNumber": 41,
+      "rotationDegrees": 0,
+      "instanceId": "cv_walls_41"
+    },
+    {
+      "key": "q:0,r:10,y:0",
+      "q": 0,
+      "r": 10,
+      "y": 0,
+      "biomeId": "cv_walls",
+      "tileNumber": 42,
+      "rotationDegrees": 300,
+      "instanceId": "cv_walls_42"
+    },
+    {
+      "key": "q:1,r:9,y:1",
+      "q": 1,
+      "r": 9,
+      "y": 1,
+      "biomeId": "cv_walls",
+      "tileNumber": 45,
+      "rotationDegrees": 240,
+      "instanceId": "cv_walls_45"
+    },
+    {
+      "key": "q:2,r:8,y:1",
+      "q": 2,
+      "r": 8,
+      "y": 1,
+      "biomeId": "cv_walls",
+      "tileNumber": 46,
+      "rotationDegrees": 300,
+      "instanceId": "cv_walls_46"
+    },
+    {
+      "key": "q:3,r:7,y:1",
+      "q": 3,
+      "r": 7,
+      "y": 1,
+      "biomeId": "cv_walls",
+      "tileNumber": 26,
+      "rotationDegrees": 300,
+      "instanceId": "cv_walls_26"
+    },
+    {
+      "key": "q:0,r:9,y:0",
+      "q": 0,
+      "r": 9,
+      "y": 0,
+      "biomeId": "cv_walls",
+      "tileNumber": 29,
+      "rotationDegrees": 0,
+      "instanceId": "cv_walls_29"
+    },
+    {
+      "key": "q:2,r:3,y:0",
+      "q": 2,
+      "r": 3,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_1"
+    },
+    {
+      "key": "q:3,r:3,y:0",
+      "q": 3,
+      "r": 3,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_2"
+    },
+    {
+      "key": "q:4,r:3,y:0",
+      "q": 4,
+      "r": 3,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_3"
+    },
+    {
+      "key": "q:4,r:2,y:0",
+      "q": 4,
+      "r": 2,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_4"
+    },
+    {
+      "key": "q:3,r:2,y:0",
+      "q": 3,
+      "r": 2,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 5,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_5"
+    },
+    {
+      "key": "q:2,r:2,y:0",
+      "q": 2,
+      "r": 2,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 6,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_6"
+    },
+    {
+      "key": "q:1,r:3,y:0",
+      "q": 1,
+      "r": 3,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 7,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_7"
+    },
+    {
+      "key": "q:1,r:4,y:0",
+      "q": 1,
+      "r": 4,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 8,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_8"
+    },
+    {
+      "key": "q:2,r:4,y:0",
+      "q": 2,
+      "r": 4,
+      "y": 0,
+      "biomeId": "oc_coastal",
+      "tileNumber": 9,
+      "rotationDegrees": 0,
+      "instanceId": "oc_coastal_9"
+    },
+    {
+      "key": "q:2,r:5,y:1",
+      "q": 2,
+      "r": 5,
+      "y": 1,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_1"
+    },
+    {
+      "key": "q:1,r:5,y:0",
+      "q": 1,
+      "r": 5,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 2,
+      "rotationDegrees": 300,
+      "instanceId": "vo_volcanic_crater_2"
+    },
+    {
+      "key": "q:1,r:6,y:2",
+      "q": 1,
+      "r": 6,
+      "y": 2,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 3,
+      "rotationDegrees": 120,
+      "instanceId": "vo_volcanic_crater_3"
+    },
+    {
+      "key": "q:0,r:5,y:0",
+      "q": 0,
+      "r": 5,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 6,
+      "rotationDegrees": 60,
+      "instanceId": "vo_volcanic_crater_6"
+    },
+    {
+      "key": "q:0,r:6,y:0",
+      "q": 0,
+      "r": 6,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 7,
+      "rotationDegrees": 60,
+      "instanceId": "vo_volcanic_crater_7"
+    },
+    {
+      "key": "q:0,r:7,y:0",
+      "q": 0,
+      "r": 7,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 10,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_10"
+    },
+    {
+      "key": "q:-1,r:8,y:0",
+      "q": -1,
+      "r": 8,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 11,
+      "rotationDegrees": 180,
+      "instanceId": "vo_volcanic_crater_11"
+    },
+    {
+      "key": "q:-2,r:8,y:0",
+      "q": -2,
+      "r": 8,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 5,
+      "rotationDegrees": 180,
+      "instanceId": "vo_volcanic_crater_5"
+    },
+    {
+      "key": "q:-1,r:7,y:0",
+      "q": -1,
+      "r": 7,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 8,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_8"
+    },
+    {
+      "key": "q:-2,r:7,y:0",
+      "q": -2,
+      "r": 7,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 9,
+      "rotationDegrees": 180,
+      "instanceId": "vo_volcanic_crater_9"
+    },
+    {
+      "key": "q:-1,r:6,y:0",
+      "q": -1,
+      "r": 6,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 12,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_12"
+    },
+    {
+      "key": "q:-2,r:6,y:0",
+      "q": -2,
+      "r": 6,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 13,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_13"
+    },
+    {
+      "key": "q:-3,r:7,y:0",
+      "q": -3,
+      "r": 7,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 16,
+      "rotationDegrees": 240,
+      "instanceId": "vo_volcanic_crater_16"
+    },
+    {
+      "key": "q:-4,r:7,y:0",
+      "q": -4,
+      "r": 7,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 22,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_22"
+    },
+    {
+      "key": "q:-4,r:6,y:0",
+      "q": -4,
+      "r": 6,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 23,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_23"
+    },
+    {
+      "key": "q:-4,r:5,y:0",
+      "q": -4,
+      "r": 5,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 21,
+      "rotationDegrees": 120,
+      "instanceId": "vo_volcanic_crater_21"
+    },
+    {
+      "key": "q:-3,r:5,y:0",
+      "q": -3,
+      "r": 5,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 24,
+      "rotationDegrees": 120,
+      "instanceId": "vo_volcanic_crater_24"
+    },
+    {
+      "key": "q:-2,r:5,y:0",
+      "q": -2,
+      "r": 5,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 25,
+      "rotationDegrees": 120,
+      "instanceId": "vo_volcanic_crater_25"
+    },
+    {
+      "key": "q:-1,r:4,y:0",
+      "q": -1,
+      "r": 4,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 26,
+      "rotationDegrees": 240,
+      "instanceId": "vo_volcanic_crater_26"
+    },
+    {
+      "key": "q:0,r:3,y:0",
+      "q": 0,
+      "r": 3,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 30,
+      "rotationDegrees": 300,
+      "instanceId": "vo_volcanic_crater_30"
+    },
+    {
+      "key": "q:0,r:4,y:0",
+      "q": 0,
+      "r": 4,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 31,
+      "rotationDegrees": 60,
+      "instanceId": "vo_volcanic_crater_31"
+    },
+    {
+      "key": "q:-1,r:5,y:0",
+      "q": -1,
+      "r": 5,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 32,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_32"
+    },
+    {
+      "key": "q:-3,r:6,y:0",
+      "q": -3,
+      "r": 6,
+      "y": 0,
+      "biomeId": "vo_volcanic_crater",
+      "tileNumber": 33,
+      "rotationDegrees": 0,
+      "instanceId": "vo_volcanic_crater_33"
+    },
+    {
+      "key": "q:1,r:2,y:0",
+      "q": 1,
+      "r": 2,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_1"
+    },
+    {
+      "key": "q:2,r:1,y:0",
+      "q": 2,
+      "r": 1,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_1"
+    },
+    {
+      "key": "q:3,r:1,y:0",
+      "q": 3,
+      "r": 1,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_2"
+    },
+    {
+      "key": "q:3,r:0,y:0",
+      "q": 3,
+      "r": 0,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_2"
+    },
+    {
+      "key": "q:4,r:0,y:0",
+      "q": 4,
+      "r": 0,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_3"
+    },
+    {
+      "key": "q:4,r:0,y:1",
+      "q": 4,
+      "r": 0,
+      "y": 1,
+      "biomeId": "ds_sand",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_3"
+    },
+    {
+      "key": "q:4,r:1,y:0",
+      "q": 4,
+      "r": 1,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_4"
+    },
+    {
+      "key": "q:4,r:-1,y:0",
+      "q": 4,
+      "r": -1,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_4"
+    },
+    {
+      "key": "q:3,r:-1,y:0",
+      "q": 3,
+      "r": -1,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 5,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_5"
+    },
+    {
+      "key": "q:5,r:1,y:0",
+      "q": 5,
+      "r": 1,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 5,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_5"
+    },
+    {
+      "key": "q:5,r:0,y:0",
+      "q": 5,
+      "r": 0,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 6,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_6"
+    },
+    {
+      "key": "q:5,r:-1,y:0",
+      "q": 5,
+      "r": -1,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 6,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_6"
+    },
+    {
+      "key": "q:6,r:0,y:0",
+      "q": 6,
+      "r": 0,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 7,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_7"
+    },
+    {
+      "key": "q:6,r:-1,y:0",
+      "q": 6,
+      "r": -1,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 7,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_7"
+    },
+    {
+      "key": "q:6,r:-2,y:0",
+      "q": 6,
+      "r": -2,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 8,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_8"
+    },
+    {
+      "key": "q:5,r:-2,y:0",
+      "q": 5,
+      "r": -2,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 8,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_8"
+    },
+    {
+      "key": "q:4,r:-2,y:0",
+      "q": 4,
+      "r": -2,
+      "y": 0,
+      "biomeId": "ds_sand",
+      "tileNumber": 9,
+      "rotationDegrees": 0,
+      "instanceId": "ds_sand_9"
+    },
+    {
+      "key": "q:3,r:0,y:1",
+      "q": 3,
+      "r": 0,
+      "y": 1,
+      "biomeId": "ds_tracks_ridgelines",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "ds_tracks_ridgelines_1"
+    },
+    {
+      "key": "q:3,r:-1,y:1",
+      "q": 3,
+      "r": -1,
+      "y": 1,
+      "biomeId": "ds_tracks_ridgelines",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "ds_tracks_ridgelines_1"
+    },
+    {
+      "key": "q:4,r:-1,y:1",
+      "q": 4,
+      "r": -1,
+      "y": 1,
+      "biomeId": "ds_tracks_ridgelines",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "ds_tracks_ridgelines_2"
+    },
+    {
+      "key": "q:4,r:0,y:2",
+      "q": 4,
+      "r": 0,
+      "y": 2,
+      "biomeId": "ds_tracks_ridgelines",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "ds_tracks_ridgelines_2"
+    },
+    {
+      "key": "q:2,r:1,y:1",
+      "q": 2,
+      "r": 1,
+      "y": 1,
+      "biomeId": "ds_tracks_ridgelines",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "ds_tracks_ridgelines_3"
+    },
+    {
+      "key": "q:4,r:1,y:1",
+      "q": 4,
+      "r": 1,
+      "y": 1,
+      "biomeId": "ds_tracks_ridgelines",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "ds_tracks_ridgelines_3"
+    },
+    {
+      "key": "q:3,r:1,y:1",
+      "q": 3,
+      "r": 1,
+      "y": 1,
+      "biomeId": "ds_tracks_ridgelines",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "ds_tracks_ridgelines_4"
+    },
+    {
+      "key": "q:4,r:0,y:3",
+      "q": 4,
+      "r": 0,
+      "y": 3,
+      "biomeId": "ds_tracks_ridgelines",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "ds_tracks_ridgelines_4"
+    },
+    {
+      "key": "q:2,r:-1,y:1",
+      "q": 2,
+      "r": -1,
+      "y": 1,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_1"
+    },
+    {
+      "key": "q:3,r:-2,y:0",
+      "q": 3,
+      "r": -2,
+      "y": 0,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_2"
+    },
+    {
+      "key": "q:2,r:-2,y:1",
+      "q": 2,
+      "r": -2,
+      "y": 1,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_3"
+    },
+    {
+      "key": "q:3,r:-3,y:0",
+      "q": 3,
+      "r": -3,
+      "y": 0,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_4"
+    },
+    {
+      "key": "q:4,r:-3,y:0",
+      "q": 4,
+      "r": -3,
+      "y": 0,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 5,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_5"
+    },
+    {
+      "key": "q:4,r:-4,y:0",
+      "q": 4,
+      "r": -4,
+      "y": 0,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 6,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_6"
+    },
+    {
+      "key": "q:3,r:-4,y:0",
+      "q": 3,
+      "r": -4,
+      "y": 0,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 7,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_7"
+    },
+    {
+      "key": "q:2,r:-3,y:0",
+      "q": 2,
+      "r": -3,
+      "y": 0,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 8,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_8"
+    },
+    {
+      "key": "q:1,r:-2,y:1",
+      "q": 1,
+      "r": -2,
+      "y": 1,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 9,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_9"
+    },
+    {
+      "key": "q:1,r:-1,y:1",
+      "q": 1,
+      "r": -1,
+      "y": 1,
+      "biomeId": "ar_ice_rocks",
+      "tileNumber": 10,
+      "rotationDegrees": 0,
+      "instanceId": "ar_ice_rocks_10"
+    },
+    {
+      "key": "q:5,r:2,y:0",
+      "q": 5,
+      "r": 2,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_1"
+    },
+    {
+      "key": "q:5,r:3,y:0",
+      "q": 5,
+      "r": 3,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_1"
+    },
+    {
+      "key": "q:6,r:3,y:0",
+      "q": 6,
+      "r": 3,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 1,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_1"
+    },
+    {
+      "key": "q:6,r:2,y:0",
+      "q": 6,
+      "r": 2,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_2"
+    },
+    {
+      "key": "q:6,r:1,y:0",
+      "q": 6,
+      "r": 1,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_2"
+    },
+    {
+      "key": "q:5,r:-3,y:0",
+      "q": 5,
+      "r": -3,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 2,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_2"
+    },
+    {
+      "key": "q:6,r:-3,y:0",
+      "q": 6,
+      "r": -3,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_3"
+    },
+    {
+      "key": "q:5,r:-4,y:0",
+      "q": 5,
+      "r": -4,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_3"
+    },
+    {
+      "key": "q:5,r:-3,y:1",
+      "q": 5,
+      "r": -3,
+      "y": 1,
+      "biomeId": "bl_earth",
+      "tileNumber": 3,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_3"
+    },
+    {
+      "key": "q:6,r:-3,y:1",
+      "q": 6,
+      "r": -3,
+      "y": 1,
+      "biomeId": "bl_earth",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_4"
+    },
+    {
+      "key": "q:6,r:-4,y:0",
+      "q": 6,
+      "r": -4,
+      "y": 0,
+      "biomeId": "bl_earth",
+      "tileNumber": 4,
+      "rotationDegrees": 0,
+      "instanceId": "bl_earth_4"
+    },
+    {
+      "key": "q:-2,r:9,y:0",
+      "q": -2,
+      "r": 9,
+      "y": 0,
+      "biomeId": "bl_tracks_streams",
+      "tileNumber": 22,
+      "rotationDegrees": 0,
+      "instanceId": "bl_tracks_streams_22"
+    },
+    {
+      "key": "q:-3,r:10,y:0",
+      "q": -3,
+      "r": 10,
+      "y": 0,
+      "biomeId": "bl_tracks_streams",
+      "tileNumber": 23,
+      "rotationDegrees": 0,
+      "instanceId": "bl_tracks_streams_23"
+    }
+  ],
+  "sharedAt": "2025-10-18T09:58:25.830Z"
+}
