@@ -4,13 +4,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "echo 'Skipping build for backend'",
+    "build": "vite build",
+    "heroku-postbuild": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "vitest",
     "test:watch": "vitest watch",
     "server": "node server/index.js",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "start:frontend": "serve -s dist -l $PORT"
   },
   "dependencies": {
     "cors": "^2.8.5",
