@@ -4,8 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "heroku-postbuild": "vite build",
+    "build": "echo 'Skipping build for backend'",
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "vitest",
