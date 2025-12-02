@@ -1135,7 +1135,7 @@ const bootstrapApp = () => {
 
     // Load hex tile model with tracking
     loadHexTileModel({
-      url: 'assets/models/hex_tile.gltf',
+      url: '/assets/models/hex_tile.gltf',
       assetId: 'hex-tile-model',
       assetName: 'Hexagonal Tile Model'
     })
