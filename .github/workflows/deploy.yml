@@ -18,8 +18,9 @@ jobs:
 
       - name: Install and Build
         run: |
+          rm -f package-lock.json
           npm install
-          npm run build
+          npx vite build
 
       - name: Deploy to External Repository
         uses: JamesIves/github-pages-deploy-action@v4
