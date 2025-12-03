@@ -20,7 +20,6 @@ jobs:
         run: |
           rm -f package-lock.json
           npm install
-          chmod +x node_modules/.bin/vite
           npm run build
 
       - name: Deploy to External Repository
