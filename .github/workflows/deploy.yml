@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install and Build
         run: |
@@ -30,3 +32,4 @@ jobs:
           branch: main # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
           clean: true # Automatically remove deleted files from the deploy branch
+          single-commit: true
