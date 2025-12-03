@@ -20,7 +20,8 @@ jobs:
         run: |
           rm -f package-lock.json
           npm install
-          npx vite build
+          chmod +x node_modules/.bin/vite
+          npm run build
 
       - name: Deploy to External Repository
         uses: JamesIves/github-pages-deploy-action@v4
